@@ -44,10 +44,10 @@ class ScoreBoard(Turtle):
             self.score_change()
             self.goto(x=175, y=150)
             self.write("win", align='center', font=('courier', 50, 'bold'))
-            self.goto(x=-175, y= 90)
+            self.goto(x=175, y= 90)
             self.write("(r) play again", align='center', font=('courier', 30, 'bold'))
-            self.goto(x=-175, y= 50)
-            self.write("(q) quit game", align='center', font=('courier', 50, 'bold'))
+            self.goto(x=175, y= 50)
+            self.write("(q) quit game", align='center', font=('courier', 30, 'bold'))
 
             Screen().listen()
             Screen().onkey(self.restart, "r")
